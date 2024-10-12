@@ -1,0 +1,47 @@
+.basicLayout {
+  overflow          : auto;
+  height            : 100vh;
+  width             : 100vw;
+  position          : fixed;
+  inset-inline-start: 0;
+  top               : 0;
+  bottom            : 0;
+  scrollbar-width   : thin;
+  scrollbar-color   : unset;
+
+  .logo {
+    width          : 150px;
+    height         : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    color          : #fff;
+  }
+
+  .action {
+    color  : #FFF;
+    padding: 0 8px;
+  }
+
+  .siderTrigger {
+    width          : 8px;
+    height         : 100px;
+    position       : absolute;
+    right          : -8px;
+    top            : 50%;
+    margin-top     : -50px;
+    background     : rgba(0, 0, 0, 0.08);
+    cursor         : pointer;
+    border-radius  : 0px 8px 8px 0px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    color          : white;
+    &:hover{
+      background: rgba(0, 0, 0, 0.2);
+    }
+    >span{
+      transform: scale(0.5, 1.5);
+    }
+  }
+}
